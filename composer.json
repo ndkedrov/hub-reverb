@@ -1,5 +1,5 @@
 {
-    "name": "laravel/reverb",
+    "name": "ndkedrov/hub-reverb",
     "description": "Laravel Reverb provides a real-time WebSocket communication backend for Laravel applications.",
     "keywords": [
         "laravel",
@@ -21,7 +21,7 @@
     "require": {
         "php": "^8.2",
         "clue/redis-react": "^2.6",
-        "guzzlehttp/psr7": "^2.6",
+        "guzzlehttp/psr7": "^3.2",
         "illuminate/console": "^10.47|^11.0|^12.0|^13.0",
         "illuminate/contracts": "^10.47|^11.0|^12.0|^13.0",
         "illuminate/http": "^10.47|^11.0|^12.0|^13.0",
@@ -71,5 +71,8 @@
         "test": "./vendor/bin/pest"
     },
     "minimum-stability": "dev",
-    "prefer-stable": true
+    "prefer-stable": true,
+    "replace": {
+        "laravel/reverb": "1.12.0"
+    }
 }
